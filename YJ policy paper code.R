@@ -3,24 +3,6 @@
 #load data file
 dflabel <- read.csv("labellingpilot3.csv")
 
-#testing for normality
-install.packages("moments")
-library(moments)
-
-skewness(dflabel$policy1)
-kurtosis(dflabel$policy1)
-skewness(dflabel$policy2)
-kurtosis(dflabel$policy2)
-skewness(dflabel$policy3)
-kurtosis(dflabel$policy3)
-skewness(dflabel$policy4)
-kurtosis(dflabel$policy4)
-skewness(dflabel$policy5)
-kurtosis(dflabel$policy5)
-skewness(dflabel$policy6)
-kurtosis(dflabel$policy6)
-
-
 #demographic descriptives
 mean(dflabel$age, na.rm = TRUE)
 summary(dflabel$age, na.rm=TRUE)
